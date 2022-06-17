@@ -5,43 +5,43 @@
 class Envd < Formula
   desc "Development environment for data science and AI/ML teams"
   homepage "https://envd.tensorchord.ai/"
-  version "0.1.0-alpha.11"
+  version "0.1.0-alpha.12"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.11/envd_0.1.0-alpha.11_Darwin_arm64"
-      sha256 "c220fc0c6f0bd5450c22de21716c53976dc693846ae0fc85abdd90886950603b"
+      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.12/envd_0.1.0-alpha.12_Darwin_arm64"
+      sha256 "8b925bb41a7d8dbd2d3a898bae0a0897cda822af3e4264dc7920a32d0da0bffc"
 
       def install
-        bin.install "envd_0.1.0-alpha.11_Darwin_arm64" => "envd"
+        bin.install "envd_0.1.0-alpha.12_Darwin_arm64" => "envd"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.11/envd_0.1.0-alpha.11_Darwin_x86_64"
-      sha256 "98342a73b7835022d561fd124efc47c4475eb680ff9420dd57b2f03e535d495e"
+      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.12/envd_0.1.0-alpha.12_Darwin_x86_64"
+      sha256 "69eda7c70607077d65a3557159bbdc57f5b8c58bc9d10f90bd6f1c8f6fd9dbda"
 
       def install
-        bin.install "envd_0.1.0-alpha.11_Darwin_x86_64" => "envd"
+        bin.install "envd_0.1.0-alpha.12_Darwin_x86_64" => "envd"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.11/envd_0.1.0-alpha.11_Linux_x86_64"
-      sha256 "9658c335d5d0846f003d81fcc3beb8b10b536de7fdddc2109b3cbc7f3dacc5af"
+      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.12/envd_0.1.0-alpha.12_Linux_x86_64"
+      sha256 "c420e75af1719e5dbe6ea51ef3dc9c0b563d81e72120ba8fb36373ecb0013408"
 
       def install
-        bin.install "envd_0.1.0-alpha.11_Linux_x86_64" => "envd"
+        bin.install "envd_0.1.0-alpha.12_Linux_x86_64" => "envd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.11/envd_0.1.0-alpha.11_Linux_arm64"
-      sha256 "cf7d26ac8f10b0c3f9573404830c5bc8ab0a2af8e5e9082fa82b5aa8d9d2cfcc"
+      url "https://github.com/tensorchord/envd/releases/download/v0.1.0-alpha.12/envd_0.1.0-alpha.12_Linux_arm64"
+      sha256 "24902503ecffd46a4926959e983db98c6760826ae27c7400304e24ec029b9cd6"
 
       def install
-        bin.install "envd_0.1.0-alpha.11_Linux_arm64" => "envd"
+        bin.install "envd_0.1.0-alpha.12_Linux_arm64" => "envd"
       end
     end
   end
