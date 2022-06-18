@@ -48,8 +48,6 @@ class Envd < Formula
 
   depends_on "go" => :build
 
-  conflicts_with "envd@alpha"
-
   def caveats; <<~EOS
     Please run `envd bootstrap` first to bootstrap
   EOS
